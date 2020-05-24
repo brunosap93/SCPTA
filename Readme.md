@@ -1,27 +1,25 @@
 # README
 In this section, we will create an UI5 application that will be consuming the back-end services created in week 1. 
 
-## Step 1 - Access the TA Landing Page
+## Step 1 - Access Business Application Studio
 
-**(At this point, you should have a dedicated user)**
+1. Open a New Browser Tab and use the following Link:
 
-Open a New Browser Window and use the following Link:
+https://tainternal1.cry10cf.int.applicationstudio.cloud.sap/index.html
 
-https://virtual-scp-roadshow.cfapps.eu10.hana.ondemand.com
+2. You should be prompted with a screen like this one where you will now create a Dev Space by clicking the "Create Dev Space" Button.
 
-For this scenario, we will be using the new Business Application Studio so click on the "Let's Go" within the BAS Tile
+![BASONLANDINGPAGE](Readme/Images/1.TALandingBAS1.png)
 
-![BASONLANDINGPAGE](../Images/TALandingBAS.jpg)
+3. From here, you will select the **SAP Fiori Template**, check the **Workflow Editor** checkbox and provide a name for your Dev Space. We would suggest you make this name unique by including your Employee number in the name and append DevSpace. 
 
-You should be prompted with a screen like this one where you will now create a Dev Space by clicking the "Create Dev Space" Button.
-![Business Application Studio](../Images/TALandingBAS2.png)
+After you specify the name, click the button "Create Dev Space"
 
-From here, you will select the SAP Fiori Template and provide a name for your Dev Space. We would suggest you make this name unique by including your UserName in the name and append UI5App. After you specify the name, click the button "Create Dev Space"
+![Dev Sapce](Readme/Images/2.NewDevSpace.png)
 
-![Dev Sapce](../Images/CreatingSAPFioriSpace.png)
+4. After 1-2 minutes, you should see the status of your creation change from started to running which means your Dev Space is now ready.
 
-After 1-2 minutes, you should see the status of your creation change from started to running which means your Dev Space is now ready.
-![Dev Space Created](../Images/FioriSpaceRunning.png)
+![Dev Space Created](Readme/Images/3.FioriSpaceRunning.png)
 
 Once the Dev Space, says RUNNING, you will see that the Dev Space Name becomes clickable (far left of screen next to the cloud symbol). Click on the name to open it and proceed to use Business Application Studio. If you are ready to continue, click here to jump to the next exercise:
 
