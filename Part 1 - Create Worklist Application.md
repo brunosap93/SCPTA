@@ -16,25 +16,25 @@ After you successfully created a new dev space in Business Application Studio, y
 
 ![cf Command](Part1Images/11.cfCommand.png)
 
-3. The API endpoint should be automatically inserted (https://api.cf.eu10.hand.ondemand.com), press *Enter*
+3. The API endpoint should be automatically inserted (https://api.cf.sap.hana.ondemand.com), press *Enter*
 
 ![cf API](Part1Images/12.ApiSelection.png)
 
-4. When prompted for user credentials, please use the platform user assigned to your group. You can check this user in the TA Landing Page.
-
-![Platform User](Part1Images/12.1.LandingPage.png)
+4. When prompted for user credentials, please use your SAP **email** and SAP password.
 
 ![cf User ID](Part1Images/13.UserID.png)
 
 ![cf Password](Part1Images/14.Password.png)
 
-5. For the next two prompts (Organization and Space) leave the default values and press *Enter*
+5. Select organization **SA P&T CAN Demo_TAINTERNAL1**.
 
 ![Organization CF](Part1Images/15.Organization.jpg)
 
+6. Select space **Dev**.
+
 ![Space CF](Part1Images/16.space.jpg)
 
-6. After these set of steps, you should see a connected message at the bottom as seen here:
+7. After these set of steps, you should see a connected message at the bottom as seen here:
 
 ![Success CF](Part1Images/18.SuccessCF.png)
 
