@@ -118,32 +118,13 @@ E | Object Unit of Measure | **priority_code**
 
 ![Creation Success](Part1Images/ProjectSuccess.png)
 
-> Note: If you don't see the confirmation message, click **File > Open Workspace**
+> Note: If you don't see the confirmation message, click **File > Open Workspace**, select your new project and click **Open**
 
 ![Open Workspace](Part1Images/OpenWorkspace.png)
 
-Select your new project and click **Open**
-
 ![Select Space](Part1Images/SelectSpace.png)
 
-## Step 3: Add a Destination Service Instance in Your Space
-
-A destination service instance is required for test running the app.
-
-1. Open a new terminal.
-
-![Terminal](Part1Images/newterminal.png)
-
-2. Create a new destination service called **dest_IncidentReport**_your P user. 
-Copy the code below and paste it in your **Terminal**, then press *Enter*.
-
-> cf create-service destination lite **dest_IncidentReport**_P00XXXX
-
-![Create Destination](Part1Images/createDestinationCommand.png)
-
-![Destination Created](Part1Images/OkCreationDest.png)
-
-## Step 4: Test run the application
+## Step 3: Test run the application
 
 Run your new application to test it.
 
@@ -153,9 +134,7 @@ Run your new application to test it.
 
 2. After *line 9* copy the following code (including the dash):
 
-**Replace P00XXXX with your P user id**
-
-``` - name: dest_IncidentReport_P00XXXX```
+``` - name: destination_incident_report```
 
 ![Paste code](Part1Images/21.FirstIndicatorPaste.png)
 
@@ -163,10 +142,8 @@ Run your new application to test it.
 
 3. Scroll down until the end of the document and after *line 44*, paste the code below (including dashes) and then save changes by going to **File > Save All** 
 
-**It's important you respect indentation and don't forget to replace P00XXXX with your P user id**
-
 ``` 
-  - name: dest_IncidentReport_P00XXXX
+  - name: destination_incident_report
   type: org.cloudfoundry.managed-service
   parameters:
     service: destination
