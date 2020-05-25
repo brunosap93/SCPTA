@@ -75,7 +75,7 @@ In this section, we will add a fixed header to the entire application within whi
 ```xml
 	xmlns:tnt="sap.tnt"
 ```
-Above _<App id="app"/>_ paste the code below.
+Above ```<App id="app"/>``` paste the code below.
 
 ```xml
 	<tnt:ToolHeader id="nav">
