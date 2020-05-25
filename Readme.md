@@ -9,6 +9,8 @@ Please go to https://sap-my.sharepoint.com/:f:/p/bruno_guerrero/EtaSbkxuFy1CiADZ
 
 1. Open a New Browser Tab and use the following Link:
 
+> Please use your SAP email and Password
+
 https://tainternal1.cry10cf.int.applicationstudio.cloud.sap/index.html
 
 2. You should be prompted with a screen like this one where you will now create a Dev Space by clicking the "Create Dev Space" Button.
