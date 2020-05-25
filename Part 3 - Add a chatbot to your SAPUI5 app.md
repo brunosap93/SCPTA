@@ -166,4 +166,4 @@ When the deployment process is complete, you will se the app URL in the console.
 
 Congratulations! You have successfully completed part 3.
 
-[Next Exercise](Part%204%20-%20Deplay%20a%20SCP%20Workflow.md)
+[Next Exercise](Part%204%20-%20Deploy%20a%20SCP%20Workflow.md)
