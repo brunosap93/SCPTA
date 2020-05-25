@@ -128,9 +128,7 @@ In this section, we will define a route that will tell our application how to na
 ```
 ![Add Route](Part2Images/22.AddRoute.png)
 
-This route indicates the app must jump to a target called _create (line 115)_
-
-3. Scroll further down until you see targets and add a new target (don't forget to include the comma at the beginning)
+3. Scroll further down until you see targets and *on line 139* add a new target (**don't forget to include the comma at the beginning**)
 
 ```javascript
 	,
