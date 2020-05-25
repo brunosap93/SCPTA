@@ -110,7 +110,7 @@ Above ```<App id="app"/>``` paste the code below.
 
 In this section, we will define a route that will tell our application how to navigate from one view to another.
 
-1. Open the **manifest.json**
+1. Go to **IncidentReportIXXXXXX > webapp**  and open **manifest.json** file.
 
 ![Open Manifest](Part2Images/21.1.OpenManifest.png)
 
