@@ -46,7 +46,7 @@ We just copied a few teamplates which have generic user, we will now change to r
 
 ![Open Controller](Part2Images/9.ChangeUser.png)
 
-3. Scroll down and do the same *on lines 117, 168 and 203*
+3. Scroll down and do the same *on lines 117, 171, 206, 239, 242 and 247*
 
 ![Change User 2](Part2Images/10.ChangeUserCreate2.png)
 
@@ -61,6 +61,19 @@ We just copied a few teamplates which have generic user, we will now change to r
 ![Replace Fromatter](Part2Images/13.ReplaceFormatter.png)
 
 > Note: Don't forget to save your changes. Go to **File > Save All**.
+
+6. Go to **IncidentReportIXXXXXX** and open **xs-app.json** file. After *line 11*, paste the code below:
+
+>	
+	{
+      "source": "^/workflowService/(.*)$",
+      "destination": "workflowService",
+      "target": "$1"
+    },
+
+![Open xs json](Part2Images/14.OpenXSApp.png)
+
+![Add route](Part2Images/15.PasteSource.png)
 
 ## Step 4: Add application header and create button
 
