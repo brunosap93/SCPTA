@@ -136,62 +136,6 @@ Run your new application to test it.
 
 ![Paste code](Part1Images/21.FirstIndicatorPaste.png)
 
-3. Open the **Run Configurations** view and click **+** and select **IncidentReport**.
-
-![Create Run Configuration](Part1Images/RunConfiguration.png)
-
-![Create Run Project](Part1Images/runcconfig_selectProject.png)
- 
- 4. Select **index.html** and **latest**
-  
-![Run Index.html](Part1Images/IndexRunconfig.png)
-![Select latest](Part1Images/latestRunconfig.png)
- 
- 5. If you are asked to enter a name, leave the default value and press **Enter**.
- 
- ![Expand configuration](Part1Images/19.NameRun.png)
- 
- 6. Expand the run configuration to display the services that can be bound.
-  
- ![Run name](Part1Images/ExpandConfiguration.png)
- 
- > SAP Business Application Studio allows you to test your app with resources.
-
- 7. To bind to the destination service, Hover over Data Source (Destination) and click the bind icon to the right of the Destination Service.
- 
- In the destinations list, type *master* and choose the *master_x_incidentservice* where x should be replaced by your platform user group (a, b, c or d).
- 
- ![Bind Destination](Part1Images/bindDestination.png)
- 
- ![Select Destination](Part1Images/SelectDestination.png)
- 
-> Once the destination service has been bound, the Bind icon turns green.
-
-> To unbind the destination service, click the Unbind icon.
-
-![Destination Binding](Part1Images/DestinationBindingSuccess.png)
-
-8. Hover over the run configuration and click the Run Module icon.
-
-![Run Test](Part1Images/RunTest.png)
-
-9. Wait for the notification saying _"A service is listening to port **6004**"_. Click the notification button.
-
-> The left side panel changes to the debug pane and the status bar color changes to orange to indicate that the app is running in debug mode.
-
-> If you are running the app for the first time, the button in the notification will say Expose and Open. Otherwise it will say Open in New Tab.
-
-![Open Test](Part1Images/OpenTest.png)
-
-> You may optionally add a port description.
-
-![Optional Description](Part1Images/DescriptionRunTest.png)
-
-The app will open in a new tab and a list of incidents is displayed.
-
-![App Running](Part1Images/TestRunning.png)
-
-
 Congratulations!. You have successfully completed part 1.
 
 [Next Exercise](Part%202%20-%20Modify%20UI5%20App.md)
