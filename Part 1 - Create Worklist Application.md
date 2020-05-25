@@ -132,49 +132,32 @@ Run your new application to test it.
 
 ![Open mta.yaml](Part1Images/20.OpenMTAYaml.png)
 
-2. After *line 9* copy the following code (including the dash):
-
-``` - name: destination_incident_report```
+2. On *line 9* and *line 47* replace **dest_IncidentReport_IXXXXXX** with **destination_incident_report**
 
 ![Paste code](Part1Images/21.FirstIndicatorPaste.png)
 
-![Paste Code](Part1Images/22.FirstPaste.png)
-
-3. Scroll down until the end of the document and after *line 44*, paste the code below (including dashes) and then save changes by going to **File > Save All** 
-
-``` 
-  - name: destination_incident_report
-  type: org.cloudfoundry.managed-service
-  parameters:
-    service: destination
-    service-plan: lite
-```
-![Paste code](Part1Images/23.SeconPasteLocaiton.png)
-
-![Paste Code](Part1Images/24.SeconPaste.png)
-
-4. Open the **Run Configurations** view and click **+** and select **IncidentReport**.
+3. Open the **Run Configurations** view and click **+** and select **IncidentReport**.
 
 ![Create Run Configuration](Part1Images/RunConfiguration.png)
 
 ![Create Run Project](Part1Images/runcconfig_selectProject.png)
  
- 5. Select **index.html** and **latest**
+ 4. Select **index.html** and **latest**
   
 ![Run Index.html](Part1Images/IndexRunconfig.png)
 ![Select latest](Part1Images/latestRunconfig.png)
  
- 6. If you are asked to enter a name, leave the default value and press **Enter**.
+ 5. If you are asked to enter a name, leave the default value and press **Enter**.
  
  ![Expand configuration](Part1Images/19.NameRun.png)
  
- 7. Expand the run configuration to display the services that can be bound.
+ 6. Expand the run configuration to display the services that can be bound.
   
  ![Run name](Part1Images/ExpandConfiguration.png)
  
  > SAP Business Application Studio allows you to test your app with resources.
 
- 8. To bind to the destination service, Hover over Data Source (Destination) and click the bind icon to the right of the Destination Service.
+ 7. To bind to the destination service, Hover over Data Source (Destination) and click the bind icon to the right of the Destination Service.
  
  In the destinations list, type *master* and choose the *master_x_incidentservice* where x should be replaced by your platform user group (a, b, c or d).
  
@@ -188,11 +171,11 @@ Run your new application to test it.
 
 ![Destination Binding](Part1Images/DestinationBindingSuccess.png)
 
-9. Hover over the run configuration and click the Run Module icon.
+8. Hover over the run configuration and click the Run Module icon.
 
 ![Run Test](Part1Images/RunTest.png)
 
-10. Wait for the notification saying _"A service is listening to port **6004**"_. Click the notification button.
+9. Wait for the notification saying _"A service is listening to port **6004**"_. Click the notification button.
 
 > The left side panel changes to the debug pane and the status bar color changes to orange to indicate that the app is running in debug mode.
 
