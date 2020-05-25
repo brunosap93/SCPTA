@@ -1,7 +1,11 @@
 # README
 In this section, we will create an UI5 application that will be consuming the back-end services created in week 1. 
 
-## Step 1 - Access Business Application Studio
+## Step 1 - Download required files
+
+Please go to ![HERE](https://sap-my.sharepoint.com/:f:/p/bruno_guerrero/EtaSbkxuFy1CiADZ6XkFPQ8BiA3AIYe-u-_CsTYo2YWjkQ?e=U20Omw) , download and save the files in your computer.
+
+## Step 2 - Access Business Application Studio
 
 1. Open a New Browser Tab and use the following Link:
 
