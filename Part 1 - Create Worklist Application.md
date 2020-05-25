@@ -57,27 +57,27 @@ B | Select the template you want to use | **SAP Fiori Worklist Application OData
 
 ![Create project from template](Part1Images/CreateWorklist.png)
 
-4. For Project Name, enter **IncidentReport_*P00XXXX**, and click **Next**.
+4. For Project Name, enter **IncidentReport_*IXXXXXX**, and click **Next**.
 
-> Note: Don't forget to replace *P00XXXX* with you P number.
+> Note: Don't forget to replace *IXXXXXX* with you I number.
 
 ![Project Name](Part1Images/ProjectName.png)
 
-5. For Basic Attributes select the following, and click **Next**.
+5. Select **Standalone Approuter** as HTML 5 Applications Runtima.
 
-> Note: Don't forget to replace *P00XXXX* with you P number.
+![html5Runtime](Part1Images/html5Runtime.png)
+
+6. For Basic Attributes select the following, and click **Next**.
+
+> Note: Don't forget to replace *IXXXXXX* with you X number.
 
 Step | Parameter | Value
 ------------ | ------------- | -------------
-A | Enter an HTML5 module name | **IncidentReport*P00XXXX***
+A | Enter an HTML5 module name | **IncidentReport*IXXXXXX***
 B | Do you want to add authentication | **No**
 C | Enter a namespace| **ns**
 
 ![Basic Attributes](Part1Images/BasicAttributes.png)
-
-6. If prompted for Module Namespace, leave the default value (**ns**), and click **Next**.
-
-![Module Namespace](Part1Images/ModuleNameSpace.png)
 
 7. For Application Title select the following, and click **Next**.
 
@@ -91,15 +91,12 @@ E | Select batch mode corresponding  to selected oData Service | **Auto: Request
   
 ![Application Title](Part1Images/ApplicationTitle.png)
 
-
 8. For Providers select the following, and click **Next**.
-
-> Note: When selecting a source, type *master* and replace the x with the your platform user group (a, b, c or d).
 
 Step | Parameter | Value
 ------------ | ------------- | -------------
 A | Select a system | **My SAP systems**
-B | Select a source | **master_x_incidentservice** 
+B | Select a source | **Incidents_CF [System URL]** 
 C | Enter a path to the oData service | **/incident/**
 
 ![Choosing Providers](Part1Images/Providers0.1.png)
@@ -112,20 +109,20 @@ Step | Parameter | Value
 A | Object Collection | **SafetyIncidents**
 B | Object Collection ID | **ID**
 C | Object Title | **title**
-D | Object Numeric Attribute | **createdBy**
+D | Object Numeric Attribute | **incidentStatus_code**
 E | Object Unit of Measure | **priority_code**
   
 ![Object Collection](Part1Images/ObjectCollection.png)
 
-10. After the new project is successfully created you will see a confirmation message. Click **Open in New Workspace** in the notification
+10. After the new project is successfully created, you will see a confirmation message at the bottom right hand-side. Click **Open in New Workspace** in the notification. 
 
 ![Creation Success](Part1Images/ProjectSuccess.png)
 
-11. Select the project workspace. Click **File > Open Workspace**
+> Note: If you don't see the confirmation message, click **File > Open Workspace**
 
 ![Open Workspace](Part1Images/OpenWorkspace.png)
 
-12. Select your new project and click **Open**
+Select your new project and click **Open**
 
 ![Select Space](Part1Images/SelectSpace.png)
 
