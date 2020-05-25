@@ -52,7 +52,7 @@ We just copied a few teamplates which have generic user, we will now change to r
 
 ![Change User 3](Part2Images/11.ChangeUserCreate3.png)
 
-4. Finally, go to **IncidentReportIXXXXXX > webapp > model** and open **formatter.js** file.
+4. Go to **IncidentReportIXXXXXX > webapp > model** and open **formatter.js** file.
 
 ![Open Formatter](Part2Images/12.OpenFormatter.png)
 
