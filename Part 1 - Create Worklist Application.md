@@ -124,7 +124,7 @@ E | Object Unit of Measure | **priority_code**
 
 ![Select Space](Part1Images/SelectSpace.png)
 
-## Step 3: Test run the application
+## Step 3: Modify destination in mta.yaml file
 
 Run your new application to test it.
 
