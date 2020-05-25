@@ -114,9 +114,10 @@ In this section, we will define a route that will tell our application how to na
 
 ![Open Manifest](Part2Images/21.1.OpenManifest.png)
 
-2. Scroll down until _routes_ section and right after the last bracket (line 111), add a new route (don't forget to include the comma at the beginning)
+2. Scroll down until _routes_ section and right after the last bracket (line 110), add a new route (**don't forget to include the comma at the beginning**)
 
-```javascript	,
+```javascript	
+	,
         {
 			"name": "RouteCreate",
 			"pattern": "create",
