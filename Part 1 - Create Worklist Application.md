@@ -63,7 +63,7 @@ B | Select the template you want to use | **SAP Fiori Worklist Application OData
 
 ![Project Name](Part1Images/ProjectName.png)
 
-5. Select **Standalone Approuter** as HTML 5 Applications Runtima.
+5. Select **Standalone Approuter** as HTML5 Applications Runtime.
 
 ![html5Runtime](Part1Images/html5Runtime.png)
 
