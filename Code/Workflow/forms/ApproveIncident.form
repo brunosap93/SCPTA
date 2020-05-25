@@ -1,0 +1,235 @@
+{
+    "id": "approveincident",
+    "schemaVersion": "1.0.0",
+    "name": "ApproveIncident",
+    "revision": "1.0",
+    "type": "task",
+    "readOnly": false,
+    "content": [
+        {
+            "id": "Product",
+            "type": "section",
+            "title": "Incident",
+            "content": [
+                {
+                    "id": "product",
+                    "type": "string",
+                    "label": "Title",
+                    "readOnly": true,
+                    "value": "${context.incident.title}",
+                    "constraints": {
+                        "required": false
+                    }
+                },
+                {
+                    "id": "inventory",
+                    "type": "string",
+                    "label": "Category",
+                    "readOnly": true,
+                    "value": "${context.incident.category_code}",
+                    "constraints": {
+                        "required": true
+                    }
+                },
+                {
+                    "id": "priority",
+                    "type": "string",
+                    "label": "Priority",
+                    "readOnly": true,
+                    "value": "${context.incident.priority_code}",
+                    "constraints": {
+                        "required": true
+                    }
+                },
+                {
+                    "id": "status",
+                    "type": "string",
+                    "label": "Status",
+                    "readOnly": false,
+                    "value": "${context.incident.incidentStatus_code}",
+                    "control": {
+                        "type": "RadioButtons",
+                        "properties": {
+                            "items": [
+                                {
+                                    "value": "assigned",
+                                    "displayValue": "Assigned"
+                                },
+                                {
+                                    "value": "closed",
+                                    "displayValue": "Closed"
+                                },
+                                {
+                                    "value": "in progess",
+                                    "displayValue": "In Progress"
+                                },
+                                {
+                                    "value": "new",
+                                    "displayValue": "New"
+                                },
+                                {
+                                    "value": "on hold",
+                                    "displayValue": "On Hold"
+                                },
+                                {
+                                    "value": "resolved",
+                                    "displayValue": "Resolved"
+                                }
+                            ]
+                        }
+                    },
+                    "constraints": {
+                        "required": true,
+                        "enum": [
+                            "assigned",
+                            "closed",
+                            "in progess",
+                            "new",
+                            "on hold",
+                            "resolved"
+                        ]
+                    }
+                },
+                {
+                    "id": "comments",
+                    "type": "string",
+                    "label": "Description",
+                    "readOnly": true,
+                    "value": "${context.incident.description}",
+                    "control": {
+                        "type": "TextArea",
+                        "properties": {
+                            "height": "medium"
+                        }
+                    },
+                    "constraints": {
+                        "required": false
+                    }
+                }
+            ]
+        },
+        {
+            "id": "comments",
+            "type": "section",
+            "title": "Technician",
+            "content": [
+                {
+                    "id": "personal_information",
+                    "type": "subsection",
+                    "title": "Personal Information",
+                    "content": [
+                        {
+                            "id": "name",
+                            "type": "string",
+                            "label": "Name",
+                            "readOnly": true,
+                            "value": "${context.technician.d.defaultFullName}",
+                            "constraints": {
+                                "required": false
+                            }
+                        },
+                        {
+                            "id": "title",
+                            "type": "string",
+                            "label": "Position",
+                            "readOnly": true,
+                            "value": "${context.technician.d.title}",
+                            "constraints": {
+                                "required": false
+                            }
+                        },
+                        {
+                            "id": "email",
+                            "type": "string",
+                            "label": "Email",
+                            "readOnly": true,
+                            "value": "${context.technician.d.email}",
+                            "constraints": {
+                                "required": false
+                            }
+                        },
+                        {
+                            "id": "performance",
+                            "type": "string",
+                            "label": "Performance",
+                            "readOnly": true,
+                            "value": "${context.technician.d.performance}",
+                            "constraints": {
+                                "required": false
+                            }
+                        }
+                    ]
+                },
+                {
+                    "id": "manager",
+                    "type": "subsection",
+                    "title": "Manager",
+                    "content": [
+                        {
+                            "id": "name",
+                            "type": "string",
+                            "label": "Name",
+                            "readOnly": true,
+                            "value": "${context.technician.d.manager.defaultFullName}",
+                            "constraints": {
+                                "required": false
+                            }
+                        },
+                        {
+                            "id": "title",
+                            "type": "string",
+                            "label": "Title",
+                            "readOnly": true,
+                            "value": "${context.technician.d.manager.title}",
+                            "constraints": {
+                                "required": false
+                            }
+                        },
+                        {
+                            "id": "email",
+                            "type": "string",
+                            "label": "Email",
+                            "readOnly": true,
+                            "value": "${context.technician.d.manager.email}",
+                            "constraints": {
+                                "required": false
+                            }
+                        },
+                        {
+                            "id": "phone",
+                            "type": "string",
+                            "label": "Phone",
+                            "readOnly": true,
+                            "value": "${context.technician.d.manager.businessPhone}",
+                            "constraints": {
+                                "required": false
+                            }
+                        },
+                        {
+                            "id": "country",
+                            "type": "string",
+                            "label": "Country",
+                            "readOnly": true,
+                            "value": "${context.technician.d.manager.country}",
+                            "constraints": {
+                                "required": false
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "decisions": [
+        {
+            "id": "approve",
+            "text": "Approve",
+            "decisionType": "positive"
+        },
+        {
+            "id": "reject",
+            "text": "Reject",
+            "decisionType": "negative"
+        }
+    ]
+}

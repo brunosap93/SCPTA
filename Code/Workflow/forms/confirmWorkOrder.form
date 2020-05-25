@@ -1,0 +1,91 @@
+{
+    "id": "confirmworkorder",
+    "schemaVersion": "1.0.0",
+    "name": "confirmWorkOrder",
+    "revision": "1.0",
+    "type": "task",
+    "readOnly": true,
+    "content": [
+        {
+            "id": "incident",
+            "type": "section",
+            "title": "Incident",
+            "content": [
+                {
+                    "id": "title",
+                    "type": "string",
+                    "label": "Title",
+                    "readOnly": false,
+                    "value": "${context.incident.title}",
+                    "constraints": {
+                        "required": false
+                    }
+                },
+                {
+                    "id": "priority",
+                    "type": "string",
+                    "label": "Priority",
+                    "readOnly": false,
+                    "value": "${context.incident.priority_code}",
+                    "constraints": {
+                        "required": false
+                    }
+                },
+                {
+                    "id": "description",
+                    "type": "string",
+                    "label": "Description",
+                    "readOnly": false,
+                    "value": "${context.incident.description}",
+                    "constraints": {
+                        "required": false
+                    }
+                },
+                {
+                    "id": "status",
+                    "type": "string",
+                    "label": "Status",
+                    "readOnly": false,
+                    "value": "${context.incident.incidentStatus_code}",
+                    "constraints": {
+                        "required": false
+                    }
+                }
+            ]
+        },
+        {
+            "id": "work_order",
+            "type": "section",
+            "title": "Work Order",
+            "content": [
+                {
+                    "id": "id",
+                    "type": "string",
+                    "label": "ID",
+                    "readOnly": false,
+                    "value": "${context.workordercreated.workorder}",
+                    "constraints": {
+                        "required": false
+                    }
+                },
+                {
+                    "id": "technician",
+                    "type": "string",
+                    "label": "Technician",
+                    "readOnly": false,
+                    "value": "${context.technician.d.defaultFullName}",
+                    "constraints": {
+                        "required": false
+                    }
+                }
+            ]
+        }
+    ],
+    "decisions": [
+        {
+            "id": "confirm",
+            "text": "Confirm",
+            "decisionType": "positive"
+        }
+    ]
+}

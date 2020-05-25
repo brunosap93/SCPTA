@@ -1,0 +1,330 @@
+{
+    "id": "approveincidentmanager",
+    "schemaVersion": "1.0.0",
+    "name": "ApproveIncidentManager",
+    "revision": "1.0",
+    "type": "task",
+    "readOnly": false,
+    "content": [
+        {
+            "id": "first_approver",
+            "type": "section",
+            "title": "First Approver",
+            "content": [
+                {
+                    "id": "name",
+                    "type": "string",
+                    "label": "Name",
+                    "readOnly": true,
+                    "value": "${context.approvers.d.defaultFullName}",
+                    "constraints": {
+                        "required": false
+                    }
+                },
+                {
+                    "id": "email",
+                    "type": "string",
+                    "label": "Email",
+                    "readOnly": true,
+                    "value": "${context.approvers.d.email}",
+                    "constraints": {
+                        "required": false
+                    }
+                }
+            ]
+        },
+        {
+            "id": "Product",
+            "type": "section",
+            "title": "Incident",
+            "content": [
+                {
+                    "id": "product",
+                    "type": "string",
+                    "label": "Title",
+                    "readOnly": true,
+                    "value": "${context.incident.title}",
+                    "constraints": {
+                        "required": false
+                    }
+                },
+                {
+                    "id": "inventory",
+                    "type": "string",
+                    "label": "Category",
+                    "readOnly": true,
+                    "value": "${context.incident.category_code}",
+                    "control": {
+                        "type": "Dropdown",
+                        "properties": {
+                            "items": [
+                                {
+                                    "value": "database",
+                                    "displayValue": "Database"
+                                },
+                                {
+                                    "value": "hardware",
+                                    "displayValue": "Hardware"
+                                },
+                                {
+                                    "value": "inquiry",
+                                    "displayValue": "Inquiry"
+                                },
+                                {
+                                    "value": "security",
+                                    "displayValue": "Security"
+                                },
+                                {
+                                    "value": "software",
+                                    "displayValue": "Software"
+                                },
+                                {
+                                    "value": "telephony",
+                                    "displayValue": "Telephony"
+                                }
+                            ]
+                        }
+                    },
+                    "constraints": {
+                        "required": true,
+                        "enum": [
+                            "database",
+                            "hardware",
+                            "inquiry",
+                            "security",
+                            "software",
+                            "telephony"
+                        ]
+                    }
+                },
+                {
+                    "id": "priority",
+                    "type": "string",
+                    "label": "Priority",
+                    "readOnly": false,
+                    "value": "${context.incident.priority_code}",
+                    "control": {
+                        "type": "Dropdown",
+                        "properties": {
+                            "items": [
+                                {
+                                    "value": "critical",
+                                    "displayValue": "Critical"
+                                },
+                                {
+                                    "value": "high",
+                                    "displayValue": "High"
+                                },
+                                {
+                                    "value": "medium",
+                                    "displayValue": "Medium"
+                                },
+                                {
+                                    "value": "low",
+                                    "displayValue": "Low"
+                                }
+                            ]
+                        }
+                    },
+                    "constraints": {
+                        "required": true,
+                        "enum": [
+                            "critical",
+                            "high",
+                            "medium",
+                            "low"
+                        ]
+                    }
+                },
+                {
+                    "id": "status",
+                    "type": "string",
+                    "label": "Status",
+                    "readOnly": false,
+                    "value": "${context.incident.incidentStatus_code}",
+                    "control": {
+                        "type": "RadioButtons",
+                        "properties": {
+                            "items": [
+                                {
+                                    "value": "assigned",
+                                    "displayValue": "Assigned"
+                                },
+                                {
+                                    "value": "closed",
+                                    "displayValue": "Closed"
+                                },
+                                {
+                                    "value": "in progess",
+                                    "displayValue": "In Progess"
+                                },
+                                {
+                                    "value": "new",
+                                    "displayValue": "New"
+                                },
+                                {
+                                    "value": "on hold",
+                                    "displayValue": "On Hold"
+                                },
+                                {
+                                    "value": "resolved",
+                                    "displayValue": "Resolved"
+                                }
+                            ]
+                        }
+                    },
+                    "constraints": {
+                        "required": true,
+                        "enum": [
+                            "assigned",
+                            "closed",
+                            "in progess",
+                            "new",
+                            "on hold",
+                            "resolved"
+                        ]
+                    }
+                },
+                {
+                    "id": "comments",
+                    "type": "string",
+                    "label": "Description",
+                    "readOnly": false,
+                    "value": "${context.incident.description}",
+                    "control": {
+                        "type": "TextArea",
+                        "properties": {
+                            "height": "medium"
+                        }
+                    },
+                    "constraints": {
+                        "required": false
+                    }
+                }
+            ]
+        },
+        {
+            "id": "comments",
+            "type": "section",
+            "title": "Technician",
+            "content": [
+                {
+                    "id": "personal_information",
+                    "type": "subsection",
+                    "title": "Personal Information",
+                    "content": [
+                        {
+                            "id": "name",
+                            "type": "string",
+                            "label": "Name",
+                            "readOnly": true,
+                            "value": "${context.technician.d.defaultFullName}",
+                            "constraints": {
+                                "required": false
+                            }
+                        },
+                        {
+                            "id": "title",
+                            "type": "string",
+                            "label": "Title",
+                            "readOnly": true,
+                            "value": "${context.technician.d.title}",
+                            "constraints": {
+                                "required": false
+                            }
+                        },
+                        {
+                            "id": "email",
+                            "type": "string",
+                            "label": "Email",
+                            "readOnly": true,
+                            "value": "${context.technician.d.email}",
+                            "constraints": {
+                                "required": false
+                            }
+                        },
+                        {
+                            "id": "performance",
+                            "type": "string",
+                            "label": "Performance",
+                            "readOnly": true,
+                            "value": "${context.technician.d.performance}",
+                            "constraints": {
+                                "required": false
+                            }
+                        }
+                    ]
+                },
+                {
+                    "id": "manager",
+                    "type": "subsection",
+                    "title": "Manager",
+                    "content": [
+                        {
+                            "id": "name",
+                            "type": "string",
+                            "label": "Name",
+                            "readOnly": true,
+                            "value": "${context.technician.d.manager.defaultFullName}",
+                            "constraints": {
+                                "required": false
+                            }
+                        },
+                        {
+                            "id": "title",
+                            "type": "string",
+                            "label": "Title",
+                            "readOnly": true,
+                            "value": "${context.technician.d.manager.title}",
+                            "constraints": {
+                                "required": false
+                            }
+                        },
+                        {
+                            "id": "email",
+                            "type": "string",
+                            "label": "Email",
+                            "readOnly": true,
+                            "value": "${context.technician.d.manager.email}",
+                            "constraints": {
+                                "required": false
+                            }
+                        },
+                        {
+                            "id": "phone",
+                            "type": "string",
+                            "label": "Phone",
+                            "readOnly": true,
+                            "value": "${context.technician.d.manager.businessPhone}",
+                            "constraints": {
+                                "required": false
+                            }
+                        },
+                        {
+                            "id": "country",
+                            "type": "string",
+                            "label": "Country",
+                            "readOnly": true,
+                            "value": "${context.technician.d.manager.country}",
+                            "constraints": {
+                                "required": false
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "decisions": [
+        {
+            "id": "approve",
+            "text": "Approve",
+            "decisionType": "positive"
+        },
+        {
+            "id": "reject",
+            "text": "Reject",
+            "decisionType": "negative"
+        }
+    ]
+}
