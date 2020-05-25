@@ -55,9 +55,18 @@ We have created a chatbot template you can reuse.
 
 ![Edit Service](Part3Images/11.EditAction.png)
 
-6. Go to **Body** and, for *definitionId* and *userID*, change *I861443* with your I number, then click **SAVE** 
+6. Go to **Body** and, for *definitionId* and *userID*, change *I861443* with your I number.
 
 ![Edit Service](Part3Images/12.ModifyValues.png)
+
+7. Go to Authentication, and enter the values below, then click **SAVE** 
+
+Parameter | Value
+------------ | ------------- 
+clientid | **sb-clone-65c79e41-dc55-44b4-b788-625fe83d0eb0!b12781|workflow!b2746**
+clientsecret | **6bcb9547-6230-4bb5-a404-2d66e2d706b3$Fyc4rbjFlU1BgiZ72WdyKUQ7t1jspW8ZjKTKN105YlE=**
+
+![Add Credentials](Part3Images/12.1.SaveCredentials.png)
 
 ## Step 3: Integrate your chatbot with your SAPUI5 application
  
