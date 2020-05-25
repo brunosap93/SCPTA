@@ -60,6 +60,8 @@ We just copied a few teamplates which have generic user, we will now change to r
 
 ![Replace Fromatter](Part2Images/13.ReplaceFormatter.png)
 
+> Note: Don't forget to save your changes. Go to **File > Save All**.
+
 ## Step 4: Add application header and create button
 
 In this section, we will add a fixed header to the entire application within which we will include an _add_ button that will open our _Create_ view.
@@ -85,10 +87,6 @@ Above _<App id="app"/>_ paste the code below.
 ```
 ![Add Header](Part2Images/19.AddAppHeader.png)
 
-On *line 9* we added an logo to our header, please feel free to use your company logo. 
-
-*Line 12* added a button that will trigger the navigation to the _Create view_
-
 3. Open **App.controller.js**
 
 ![Open App Controller](Part2Images/20.OpenAppController.png)
@@ -106,7 +104,7 @@ On *line 9* we added an logo to our header, please feel free to use your company
 ```
 ![Open App Controller](Part2Images/21.AddCreateHandler.png)
 
-On *lines 14 to 16* we navigate to a route called _RouteCreate_. This route does not exist yet, we will add it in the next step.
+> Note: Don't forget to save your changes. Go to **File > Save All**.
 
 ## Step 5: Add route and target
 
@@ -161,11 +159,7 @@ After _onInit_ funtion, please add:
 ```
 ![Add Refresher](Part2Images/24.AddRefreshWorklist.png)
 
-On *line 38* we attached a new event that will be triggered when the view is called from another view. *Line 42* will refresh the table content to show the most recent incident created.
-
-5. Refresh the application preview to see your changes.
-
-![App Working](Part2Images/25.1.AppWorking.gif)
+> Note: Don't forget to save your changes. Go to **File > Save All**.
 
 Congratulations!. You have successfully completed part 2.
 
