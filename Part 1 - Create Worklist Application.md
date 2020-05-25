@@ -1,6 +1,6 @@
 # Create a new application from a template
 
-After you successfully created a new SAP Fiori dev space in Business Application Studio, you can now create a SAP UI5 applications. To reduce development time you will be leveraging one of the preexisting templates available.
+After you successfully created a new dev space in Business Application Studio, you can now create a SAP UI5 applications. To reduce development time you will be leveraging one of the preexisting templates available.
 
 ## Step 1: Create new project
 
