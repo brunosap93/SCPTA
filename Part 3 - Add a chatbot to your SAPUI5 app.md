@@ -55,7 +55,7 @@ We have created a chatbot template you can reuse.
 
 ![Edit Service](Part3Images/11.EditAction.png)
 
-6. Go to **Body** and, for *definitionId* and *userID*, change *I861443* with your I number. 
+6. Go to **Body** and, for *definitionId* and *userID*, change *I861443* with your I number, then click **SAVE** 
 
 ![Edit Service](Part3Images/12.ModifyValues.png)
 
