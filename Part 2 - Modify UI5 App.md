@@ -66,7 +66,7 @@ In this section, we will add a fixed header to the entire application within whi
 
 1. We will use _App view_ which is the main application container. Right click on **App.view.xml > Open With > Code Editor** 
 
-![Open App View](Part2Images/CreateView/18.OpenAppView.png)
+![Open App View](Part2Images/18.OpenAppView.png)
 
 2. In _App view_, we will add a header but first we need to add an additional library right after *xmlns:mvc="sap.ui.core.mvc"*
 
@@ -83,7 +83,7 @@ Above _<App id="app"/>_ paste the code below.
 		<Button type="Transparent" icon="sap-icon://add" press="toCreate"></Button>
 	</tnt:ToolHeader>
 ```
-![Add Header](Part2Images/CreateView/19.AddAppHeader.png)
+![Add Header](Part2Images/19.AddAppHeader.png)
 
 On *line 9* we added an logo to our header, please feel free to use your company logo. 
 
@@ -91,7 +91,7 @@ On *line 9* we added an logo to our header, please feel free to use your company
 
 3. Open **App.controller.js**
 
-![Open App Controller](Part2Images/CreateView/20.OpenAppController.png)
+![Open App Controller](Part2Images/20.OpenAppController.png)
 
 4. Please add the code below, after _onInit_ function (don't forget to include the comma at the beginning):
 
@@ -104,7 +104,7 @@ On *line 9* we added an logo to our header, please feel free to use your company
 				.navTo("RouteCreate", {});
         }
 ```
-![Open App Controller](Part2Images/CreateView/21.AddCreateHandler.png)
+![Open App Controller](Part2Images/21.AddCreateHandler.png)
 
 On *lines 14 to 16* we navigate to a route called _RouteCreate_. This route does not exist yet, we will add it in the next step.
 
@@ -114,7 +114,7 @@ In this section, we will define a route that will tell our application how to na
 
 1. Open the **manifest.json**
 
-![Open Manifest](Part2Images/CreateView/21.1.OpenManifest.png)
+![Open Manifest](Part2Images/21.1.OpenManifest.png)
 
 2. Scroll down until _routes_ section and right after the last bracket (line 111), add a new route (don't forget to include the comma at the beginning)
 
@@ -127,7 +127,7 @@ In this section, we will define a route that will tell our application how to na
 			]
 	}
 ```
-![Add Route](Part2Images/CreateView/22.AddRoute.png)
+![Add Route](Part2Images/22.AddRoute.png)
 
 This route indicates the app must jump to a target called _create (line 115)_
 
@@ -140,7 +140,7 @@ This route indicates the app must jump to a target called _create (line 115)_
           "viewId": "create"
         }
 ```
-![Add Target](Part2Images/CreateView/23.AddTarget.png)
+![Add Target](Part2Images/23.AddTarget.png)
 
 4. After creating a new incident, we want our worklist to be refreshed automatically, therefore we will add a refresh instruction after the main view is called again.
 
@@ -159,13 +159,13 @@ After _onInit_ funtion, please add:
                 this.getView().byId("table").getBinding("items").refresh();
         },
 ```
-![Add Refresher](Part2Images/CreateView/24.AddRefreshWorklist.png)
+![Add Refresher](Part2Images/24.AddRefreshWorklist.png)
 
 On *line 38* we attached a new event that will be triggered when the view is called from another view. *Line 42* will refresh the table content to show the most recent incident created.
 
 5. Refresh the application preview to see your changes.
 
-![App Working](Part2Images/CreateView/25.1.AppWorking.gif)
+![App Working](Part2Images/25.1.AppWorking.gif)
 
 Congratulations!. You have successfully completed part 2.
 
