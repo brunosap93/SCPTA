@@ -91,7 +91,7 @@ Above ```<App id="app"/>``` paste the code below.
 
 ![Open App Controller](Part2Images/20.OpenAppController.png)
 
-4. Please add the code below, after _onInit_ function (don't forget to include the comma at the beginning):
+4. Please add the code below, after _onInit_ function (**don't forget to include the comma at the beginning**):
 
 ```javascript
 	,
