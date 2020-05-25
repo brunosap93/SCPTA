@@ -12,7 +12,7 @@ You are now able to visualize a list of incidents and its details. In this secti
 
 ![Select Views](Part2Images/2.selectViews.png)
 
-3. We will repeat the previous two steps for **controller**, **model** and **i18n** folders. Right click on them, select **Upload Files...** and shose the files inside the corresponding folder from the documents downloaded previously.
+3. We will repeat the previous two steps for **controller**, **model** and **i18n** folders. Right click on them, select **Upload Files...** and choose the files inside the corresponding folder from the documents downloaded previously.
 
 Once this is done, explorer view should look like this:
 
