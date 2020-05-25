@@ -58,7 +58,7 @@ Parameter | Value
 
 After you do so, your explorer view should look like this:
 
-![Files](Part4Images/12.0.Files.png)
+![Files](Part4Images/12.0.RenameFile.png)
 
 5. Go to **WorkflowIXXXXXX > workflows** and right click on **WorkflowIXXXXXX.workflow** and then **Rename**, replace **IXXXXXX** with you I number.
 
