@@ -61,10 +61,9 @@ We have created a chatbot template you can reuse.
 
 7. Go to Authentication, and enter the values below, then click **SAVE** 
 
-Parameter | Value
------------- | ------------- 
-CLIENT ID | sb-clone-65c79e41-dc55-44b4-b788-625fe83d0eb0!b12781|workflow!b2746
-CLIENT SECRET | 6bcb9547-6230-4bb5-a404-2d66e2d706b3$Fyc4rbjFlU1BgiZ72WdyKUQ7t1jspW8ZjKTKN105YlE=
+ 
+CLIENT ID : sb-clone-65c79e41-dc55-44b4-b788-625fe83d0eb0!b12781|workflow!b2746
+CLIENT SECRET : 6bcb9547-6230-4bb5-a404-2d66e2d706b3$Fyc4rbjFlU1BgiZ72WdyKUQ7t1jspW8ZjKTKN105YlE=
 
 ![Add Credentials](Part3Images/12.1.SaveCredentials.png)
 
