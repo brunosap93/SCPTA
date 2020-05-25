@@ -132,7 +132,7 @@ Run your new application to test it.
 
 ![Open mta.yaml](Part1Images/20.OpenMTAYaml.png)
 
-2. On *line 9* and *line 47* replace **dest_IncidentReport_IXXXXXX** with **destination_incident_report**
+2. On *line 10* and *line 47* replace **dest_IncidentReport_IXXXXXX** with **destination_incident_report**
 
 ![Paste code](Part1Images/21.FirstIndicatorPaste.png)
 
